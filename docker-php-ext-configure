@@ -7,9 +7,8 @@ set -e
 : ${LDFLAGS:=$PHP_LDFLAGS}
 export CFLAGS CPPFLAGS LDFLAGS
 
-srcExists=
-if [ -d /usr/src/php ]; then
-	srcExists=1
+this is my addition 
+
 fi
 docker-php-source extract
 if [ -z "$srcExists" ]; then
